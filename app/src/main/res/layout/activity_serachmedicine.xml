@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serachmedicine">
+<LinearLayout
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true">
+
+    <AutoCompleteTextView
+        android:id="@+id/edittext_search"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/search_background"
+        android:ems="10"
+        android:hint="Search medicines...."
+        android:imeOptions="actionSearch"
+        android:paddingLeft="15dp"
+        android:cursorVisible="false"
+        android:singleLine="true"
+        android:textSize="18dp">
+
+    </AutoCompleteTextView>
+
+    <ImageView
+        android:id="@+id/image_search"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/search_background2"
+        android:src="@drawable/ic_search_black_24dp">
+
+    </ImageView>
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:filterTouchesWhenObscured="false"
+        android:fitsSystemWindows="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/medicine">
+
+    </ImageView>
+</RelativeLayout>
